@@ -3,12 +3,12 @@ layout: post
 title:  Setup twitter-bootstrap-rails
 Tags: Rails Twitter-bootstrap
 ---
-[前回](http://scriptogr.am/matsuda/post/create-rails-project-to-deploy-on-heroku)の引き続きで__Twitter-bootstrap-rails__を試す  
+[前回]({% post_url 2012-05-06-create-rails-project-to-deploy-on-heroku %})の引き続きで`Twitter-bootstrap-rails`を試す  
 また[こちらのブログ](http://ppworks.hatenablog.jp/entry/2012/02/19/033644)を参考にさせてもらう
 
 ## Twitter-bootstrap-railsのセットアップ
 
-* _'Gemfile'_に_twitter-'bootstrap-rails'_を追加
+* `Gemfile`に`twitter-bootstrap-rails`を追加
 
 		group :assets do
 			...
@@ -46,13 +46,13 @@ Tags: Rails Twitter-bootstrap
 
 		$ bundle exec rails g controller Pages index
 
-* _config/routes.rb_にroutingを設定
+* `config/routes.rb`にroutingを設定
 
 		  ...
 		  root :to => 'pages#index'
 		  ...
 
-* _index.html_削除
+* `index.html`削除
 
 		$ rm -f public/index.html
 
@@ -65,7 +65,7 @@ Tags: Rails Twitter-bootstrap
 
 * layoutの変更  
 
-	_app/views/layouts/bootstrap.html.erb_にlayoutを指定
+	`app/views/layouts/bootstrap.html.erb`にlayoutを指定
 
 		class ApplicationController < ActionController::Base
 			layout 'bootstrap'

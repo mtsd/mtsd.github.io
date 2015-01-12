@@ -44,7 +44,7 @@ rbenvでRubyをインストールしようとするとエラーが発生
 
 ruby-1.9.3-p125より古いrubyをビルドするためには、Appleの提供するllvm-gccではない公式GCCコンパイラが必要とのこと
 
-<script src="https://gist.github.com/3930039.js?file=3_install_ruby_but_error"></script>
+{% gist matsuda/3930039 3_install_ruby_but_error %}
 
 ### install GCC compiler
 

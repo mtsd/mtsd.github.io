@@ -22,11 +22,11 @@ Homebrew自体をアップデートする
 
 <hr />
 
-<script src="https://gist.github.com/3186441.js?file=1_install_mysql.log"></script>
+{% gist matsuda/3186441 1_install_mysql.log %}
 
 ## setup MySQL
 
-<script src="https://gist.github.com/3186441.js?file=2_setup_mysql_database.log"></script>
+{% gist matsuda/3186441 2_setup_mysql_database.log %}
 
 
 ## 起動スクリプトの設定

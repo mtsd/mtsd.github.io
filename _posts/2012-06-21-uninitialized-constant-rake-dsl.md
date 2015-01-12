@@ -4,6 +4,7 @@ title:  uninitialized constant Rake::DSL
 date:   2012-06-21 22:00:00
 Tags: Ruby
 ---
+
 	uninitialized constant Rake::DSL
 
 というエラーが出た時の対処

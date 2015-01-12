@@ -8,13 +8,13 @@ Tags: OSX Homebrew
 
 	$ brew install postgresql
 
-<script src="https://gist.github.com/2963485.js?file=1_install_postgresql.log"></script>
+{% gist matsuda/2963485 1_install_postgresql.log %}
 
 ## 初期化
 
 	$ initdb /usr/local/var/postgres
 
-<script src="https://gist.github.com/2963485.js?file=2_create_postgresql_database.log"></script>
+{% gist matsuda/2963485 2_create_postgresql_database.log %}
 
 ## PostgreSQLを起動
 
