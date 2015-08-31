@@ -1,34 +1,17 @@
 ---
 layout: post
 title: ReactiveCocoaをSwift2で試す
-tags: [iOS, Swift, ReactiveCocoa]
+tags: [iOS, Swift, ReactiveCocoa, Carthage]
 ---
 
-# ReactiveCocoa
 
-Swift2.0対応を試す
+[ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)のSwift2.0対応を試す
 
-## Carthage
+## ReactiveCocoaのインストール
 
-* [iOS 7 でも Carthage を使おう](http://qiita.com/koher/items/a3b254d0195669088e40)
+[Carthage](https://github.com/Carthage/Carthage)でインストールする  
 
-~~~
-$ brew update
-$ brew install carthage
-($ brew upgrade carthage)
-~~~
-
-## Xcode
-
-* [CarthageでSwift 1.2に対応したライブラリをビルド](http://blog.ishkawa.org/2015/03/06/1425625466/)
-
-~~~
-$ sudo xcode-select --switch /Applications/Xcode-beta.app
-$ xcode-select --print-path
-/Applications/Xcode-beta.app/Contents/Developer
-~~~
-
-## ReactiveCocoa
+* [以前試したCarthageの記事](/2015/08/31/Carthage.html)も参照
 
 ~~~
 $ touch Cartfile
@@ -63,6 +46,7 @@ The following build commands failed:
 * [CarthageでReactiveCocoaのSwift 2.0版を導入する](http://qiita.com/masahikot/items/8b42e2679608bf785454)
 
 ~~~
+$ sudo xcode-select --switch /Applications/Xcode-beta.app
 $ carthage update
 *** Fetching ReactiveCocoa
 *** Fetching Result
@@ -76,3 +60,16 @@ $ carthage update
 *** Building scheme "ReactiveCocoa-watchOS" in ReactiveCocoa.xcworkspace
 *** Building scheme "ReactiveCocoa iOS" in ReactiveCocoa.xcworkspace
 ~~~
+
+## ReactiveCocoaの実装
+
+下記の記事を参考に、"ReactiveCocoa Tutorial - RAYWENDERLICH"のコードを`Swift2.0`で書きなおしてみた。
+
+[TestReactiveCocoa](https://github.com/matsuda/SwiftSamples/tree/master/TestReactiveCocoa)
+
+
+### 参照
+
+* [ReactiveCocoa Tutorial – The Definitive Introduction: Part 1/2](http://www.raywenderlich.com/62699/reactivecocoa-tutorial-pt1)
+* [ReactiveCocoa Tutorial – The Definitive Introduction: Part 2/2](http://www.raywenderlich.com/62796/reactivecocoa-tutorial-pt2)
+* [[swift] swiftでReactiveCocoa](http://www.kuma-de.com/blog/2015-01-10/6872)
