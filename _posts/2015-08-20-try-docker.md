@@ -4,15 +4,13 @@ title: Docker
 tags: [Docker]
 ---
 
-# Docker
+## Dockerのセットアップ
 
 * [MacでDockerを試してみる](http://qiita.com/itopan88/items/8be49baae40df392f6f2)
 
-この記事をそのまんま試す
+この記事をそのまんま試してみる
 
-## setup
-
-### dockerインストール
+### Dockerのインストール
 
 ~~~
 $ brew update
@@ -110,7 +108,7 @@ $ boot2docker status
 running
 ~~~
 
-.bash_profileに上記の設定（export ...）を追記する
+`.bash_profile`に上記の設定（export ...）を追記する
 
 ### イメージファイルを落とす
 
@@ -147,7 +145,7 @@ Status列が「Up」になっていると実行中
 $ docker stop 98d99c50c39e
 ~~~
 
-### centos6のイメージファイルを落とす
+### CentOS6のイメージファイルを落とす
 
 ~~~
 $ docker pull centos:centos6
@@ -171,9 +169,7 @@ Starting httpd: httpd: Could not reliably determine the server's fully qualified
                                                            [  OK  ]
 ~~~
 
-## Sinatra
-
-### Ruby
+### Rubyのインストール
 
 ~~~
 # yum install -y git tar gcc-c++ openssl-devel readline-devel zlib-devel 
@@ -199,4 +195,6 @@ ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux]
 Bundler version 1.10.6
 ~~~
 
-続く
+Sinatraをインストールして起動するまで試そうと思ったがとりあえずここまで
+
+進展があったら追記する
