@@ -1,5 +1,6 @@
 # Site settings
 title: M
+name: M
 description: matsuda is iOS and Ruby on Rails developer
 twitter_username: mtsd
 github_username: matsuda
@@ -10,3 +11,6 @@ markdown: kramdown
 
 # Custom
 permalink: /:year/:month/:day/:title.html
+
+gems:
+  - jekyll-feed
