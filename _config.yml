@@ -14,3 +14,4 @@ permalink: /:year/:month/:day/:title.html
 
 gems:
   - jekyll-feed
+  - jekyll-gist
