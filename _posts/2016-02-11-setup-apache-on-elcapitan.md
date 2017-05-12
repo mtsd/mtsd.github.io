@@ -74,6 +74,25 @@ tags: OSX
 	$ apachectl configtest
 	$ sudo apachectl restart
 
+*追記（2017/05/12）*
+
+`Sierra`でこれらの設定をしたら、`configtest`実行時にエラーが表示された。
+
+	$ apachectl configtest
+	AH00557: httpd: apr_sockaddr_info_get() failed for <xxxxxx>
+	AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+
+どうも<xxxxxx\>（伏せ字）のサーバの名前が解決できないという内容のようだ。  
+調べて見ると`/etc/apache2/httpd.conf`に
+
+	# If your host doesn't have a registered DNS name, enter its IP address here.
+
+というコメントがあるので、以下のように設定したところエラーが消えた。
+
+	#ServerName www.example.com:80
+	↓
+	ServerName 127.0.0.1:80
+
 ### index.htmlの作成
 
 ユーザディレクトリを作成
