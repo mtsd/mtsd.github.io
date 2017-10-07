@@ -1,0 +1,3 @@
+$ cp Gemfile ../
+$ cd ..
+$ bundle install --path vendor/bundle
