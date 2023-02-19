@@ -19,3 +19,6 @@ permalink: /:year/:month/:day/:title.html
 plugins:
   - jekyll-gist
   - jekyll-feed
+
+# nostr
+include: [".well-known"]
