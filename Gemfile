@@ -3,5 +3,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 gem "jekyll"
-gem "jekyll-feed"
-gem "jekyll-gist"
+group :jekyll_plugins do
+   gem "jekyll-gist"
+   gem "jekyll-feed"
+end
